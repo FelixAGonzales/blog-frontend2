@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Styling for each photo section */
+.photo-section {
+  background-color: #ffffff; /* White background for each post */
+  border: 1px solid #e2e8f0; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  margin: 1rem 0; /* Spacing between sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.photo-section:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Title styling */
+.photo-section h2 {
+  color: #2f855a; /* Green color for subheadings */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Body styling */
+.photo-section p {
+  color: #4a5568; /* Slightly darker text color for the body */
 }
 
-.card {
-  padding: 2em;
+/* Image styling */
+.photo-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Slight rounding of the image corners */
+  margin-bottom: 1rem; /* Space below the image */
 }
 
-.read-the-docs {
-  color: #888;
+/* Button styling */
+.photo-section button {
+  background-color: #48bb78; /* Green button background */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.photo-section button:hover {
+  background-color: #38a169; /* Darker green on hover */
 }

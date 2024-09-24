@@ -1,0 +1,94 @@
+.modal-background {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1em;
+}
+
+.modal-main button.close {
+  font-size: 2em;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0em;
+  right: 0.2em;
+}
+
+
+/* Modal Container Styling */
+.modal {
+  display: flex; /* Center the modal content */
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for emphasis */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #a3d67e;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px; /* Increased maximum width */
+  width: 90%; /* Responsive width */
+  /* max-height: 90%; Increased maximum height */
+  overflow-y: auto; /* Scroll if content overflows */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+/* Modal Header Styling */
+.modal-content h1 {
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Modal Paragraph Styling */
+.modal-content p {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
+.modal-content img {
+  display: block;
+  max-width: 100%; /* Image fits within modal width */
+  max-height: 400px; /* Increased height limit */
+  margin: 10px 0;
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Close Button Styling */
+.modal-close {
+  position: absolute;
+  top: top;
+  right: right;
+  background: #ff4d4d;
+  color: rgb(204, 26, 26);
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
